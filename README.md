@@ -3,10 +3,13 @@
 Written in pure Bash. No need to install any package. Tested with Raspbian.
 
 
-# Instructions
+## Instructions
 
-1. Remove the default motd: 
-    $ sudo rm /etc/motd
+1. Remove the default motd:
+``
+    sudo rm /etc/motd
+``
+
 
 Download and save the motd.sh bash script in the Raspberry Pi. 
 Remember to add execution permissions and change the owner:
@@ -35,4 +38,5 @@ $ sudo chmod +x motd.sh
     Restart the sshd service:
 
     $ sudo systemctl restart sshd
+    
 
