@@ -21,8 +21,11 @@ Written in pure Bash. No need to install any package. Tested with Raspbian.
 ```sudo nano /etc/profile.d/motd.sh``` and copy/paste the code from this repository.
 
 4. Add execution permissions and change the owner:
+
 ``
 $ sudo chown root:root motd.sh
+``
+``
 $ sudo chmod +x motd.sh
 ``
 
