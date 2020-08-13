@@ -9,11 +9,18 @@ Written in pure Bash. No need to install any package. Tested with Raspbian.
 ``
     sudo rm /etc/motd
 ``
-Remove the "last login" information. Disable the PrintLastLog option from the sshd service. Edit the /etc/ssh/sshd_config file and uncomment the line #PrintLastLog yes:
+
+2. Remove the "last login" information. Disable the PrintLastLog option from the sshd service. Edit the /etc/ssh/sshd_config file and uncomment the line #PrintLastLog yes:
 
     $ sudo nano /etc/ssh/sshd_config
 
-Change [PrintLastLog yes] (uncomment if commented) to [PrintLastLog no]
+Change (and uncomment if commented) 
+
+PrintLastLog yes  
+
+to 
+
+PrintLastLog no
 
 
 
