@@ -25,3 +25,9 @@ Written in pure Bash. No need to install any package. Tested with Raspbian.
 $ sudo chown root:root motd.sh
 $ sudo chmod +x motd.sh
 ``
+
+5. Restart the SShd service:
+
+``
+sudo systemctl restart sshd
+``
