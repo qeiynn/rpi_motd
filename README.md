@@ -17,29 +17,11 @@ Written in pure Bash. No need to install any package. Tested with Raspbian.
 ``
 
 
-Download and save the motd.sh bash script in the Raspberry Pi. 
-Remember to add execution permissions and change the owner:
+3. Download and save the motd.sh bash script in the Raspberry Pi in /etc/profile.d. Or create a new file with 
+```sudo nano /etc/profile.d/motd.sh``` and copy/paste the code from this repository.
 
+4. Add execution permissions and change the owner:
+``
 $ sudo chown root:root motd.sh
 $ sudo chmod +x motd.sh
-
-    Autoexecute the script when the user logs in. There are multiple locations from where you can start the motd.sh script, for example using the /etc/profile. Save the motd.sh script in the directory /etc/profile.d and it will be executed after the login. More about autostarting scripts.
-
-
-    Remove the "last login" information. Disable the PrintLastLog option from the sshd service. Edit the /etc/ssh/sshd_config file and uncomment the line #PrintLastLog yes:
-
-    $ sudo nano /etc/ssh/sshd_config
-
-    Before:
-
-    #PrintLastLog yes
-
-    After:
-
-    PrintLastLog no
-
-    Restart the sshd service:
-
-    $ sudo systemctl restart sshd
-    
-
+``
