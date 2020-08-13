@@ -1,4 +1,4 @@
-# Message of the Day
+# Message of the Day - RASPBERRY PI
 
 Written in pure Bash. No need to install any package. Tested with Raspbian.
 
