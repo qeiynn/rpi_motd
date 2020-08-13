@@ -23,11 +23,11 @@ Written in pure Bash. No need to install any package. Tested with Raspbian.
 4. Add execution permissions and change the owner:
 
 ``
-$ sudo chown root:root motd.sh
+sudo chown root:root motd.sh
 ``
 
 ``
-$ sudo chmod +x motd.sh
+sudo chmod +x motd.sh
 ``
 
 5. Restart the SShd service:
