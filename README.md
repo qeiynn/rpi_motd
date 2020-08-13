@@ -1,13 +1,18 @@
 # Message of the Day
 
-Written in pure Bash. No need to install any package. Tested with the Arch Linux ARM and Raspbian distributions.
+Written in pure Bash. No need to install any package. Tested with Raspbian.
 
-Download and save the motd.sh bash script in the Raspberry Pi. Remember to add execution permissions and change the owner:
+
+# Instructions
+
+1. Remove the default motd: 
+    $ sudo rm /etc/motd
+
+Download and save the motd.sh bash script in the Raspberry Pi. 
+Remember to add execution permissions and change the owner:
 
 $ sudo chown root:root motd.sh
 $ sudo chmod +x motd.sh
-
-The following steps may vary depending on the OS. Arch Linux ARM is assumed.
 
     Autoexecute the script when the user logs in. There are multiple locations from where you can start the motd.sh script, for example using the /etc/profile. Save the motd.sh script in the directory /etc/profile.d and it will be executed after the login. More about autostarting scripts.
 
