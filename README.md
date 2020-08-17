@@ -3,16 +3,20 @@
 
 ## Instructions
 
-1. Download and move the "motd" from this repository to /etc/motd.
+1. Download and run the "motd-script.sh" from this repository to /etc/motd.
 ```
-sudo mv motd /etc/motd
+sudo git clone https://github.com/qeiynn/rpi_motd.git
 ```
-Alternatively, you could create a file in etc and copy/paste the code from "motd"
 ```
-sudo nano /etc/motd
+sudo bash /rpi_motd/motd-script.sh
 ```
 
-2. You can remove the "last login" information if you want, however, it is considered a security risk. To do so, edit the sshd_config and uncomment the line "#PrintLastLog yes". Change yes to no.
+2. Delete the script
+```
+sudo rm -r /rpi_motd
+```
+
+3. You can remove the "last login" information if you want, however, it is considered a security risk. To do so, edit the sshd_config and uncomment the line "#PrintLastLog yes". Change yes to no.
 ```
 sudo nano /etc/ssh/sshd_config
 ```
