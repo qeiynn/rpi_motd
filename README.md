@@ -17,7 +17,9 @@ Written in pure Bash. No need to install any package. Tested with Raspbian.
 ``
 
 
-3. Download and save the motd.sh bash script in the Raspberry Pi in /etc/profile.d. Or create a new file with 
+3. Download and save the motd.sh bash script in the Raspberry Pi in /etc/profile.d. 
+
+Alternatively, you can create a new file with 
 ```
 sudo nano /etc/profile.d/motd.sh
 ``` 
