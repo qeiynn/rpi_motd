@@ -28,11 +28,11 @@ and copy/paste the code from this repository.
 4. Add execution permissions and change the owner:
 
 ``
-sudo chown root:root motd.sh
+sudo chown root:root /etc/profile.d/motd.sh
 ``
 
 ``
-sudo chmod +x motd.sh
+sudo chmod +x /etc/profile.d/motd.sh
 ``
 
 5. Restart the SShd service:
