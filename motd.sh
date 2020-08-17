@@ -66,7 +66,7 @@ function sec2time (){
 }
 
 borderColor=35
-headerLeafColor=32
+turtleColor=32
 headerRaspberryColor=31
 greetingsColor=36
 statsLabelColor=33
@@ -79,16 +79,16 @@ borderEmptyLine="$borderBar                                                     
 
 # Header
 header="$borderTopLine\n$borderEmptyLine\n"
-header="$header$borderBar$(color $headerLeafColor "          .~~.   .~~.                                                         ")$borderBar\n"
-header="$header$borderBar$(color $headerLeafColor "         '. \ ' ' / .'                                                        ")$borderBar\n"
-header="$header$borderBar$(color $headerRaspberryColor "          .~ .~~~..~.                      _                          _       ")$borderBar\n"
-header="$header$borderBar$(color $headerRaspberryColor "         : .~.'~'.~. :     ___ ___ ___ ___| |_ ___ ___ ___ _ _    ___|_|      ")$borderBar\n"
-header="$header$borderBar$(color $headerRaspberryColor "        ~ (   ) (   ) ~   |  _| .'|_ -| . | . | -_|  _|  _| | |  | . | |      ")$borderBar\n"
-header="$header$borderBar$(color $headerRaspberryColor "       ( : '~'.~.'~' : )  |_| |__,|___|  _|___|___|_| |_| |_  |  |  _|_|      ")$borderBar\n"
-header="$header$borderBar$(color $headerRaspberryColor "        ~ .~ (   ) ~. ~               |_|                 |___|  |_|          ")$borderBar\n"
-header="$header$borderBar$(color $headerRaspberryColor "         (  : '~' :  )                                                        ")$borderBar\n"
-header="$header$borderBar$(color $headerRaspberryColor "          '~ .~~~. ~'                                                         ")$borderBar\n"
-header="$header$borderBar$(color $headerRaspberryColor "              '~'                                                             ")$borderBar"
+header="$header$borderBar$(color $turtleColor "                                                                              ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                          ___  _  _  ___  _     _                             ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                         / __|| || || __|| |   | |                            ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                         \__ \| __ || _| | |__ | |__                          ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                         |___/|_||_||___||____||____|                         ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                        ___  _  _   ___    ___  _  __  _                      ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                       / __|| || | / _ \  / __|| |/ / | |                     ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                       \__ \| __ || (_) || (__ | ' <  |_|                     ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                       |___/|_||_| \___/  \___||_|\_\ (_)                     ")$borderBar\n"
+header="$header$borderBar$(color $turtleColor "                                                                              ")$borderBar"
 
 me=$(whoami)
 
@@ -133,4 +133,4 @@ label5="$borderBar  $(color $statsLabelColor "Temperature...:") $label5$borderBa
 stats="$label1\n$label2\n$label3\n$label4\n$label5"
 
 # Print motd
-echo -e "$header\n$borderEmptyLine\n$greetings\n$borderEmptyLine\n$stats\n$borderEmptyLine\n$borderBottomLine"      
+echo -e "$header\n$borderEmptyLine\n$greetings\n$borderEmptyLine\n$stats\n$borderEmptyLine\n$borderBottomLine"  
