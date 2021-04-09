@@ -1,5 +1,5 @@
 # Message of the Day - RASPBERRY PI
-### Tested with raspbios
+### Tested with raspios
 
 ## Instructions
 
